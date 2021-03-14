@@ -7,9 +7,12 @@ See sample log: https://github.com/YuWaiPang/youFastCSV/blob/main/samplelog.txt
 
 Dependency: Dotnet 4.72+ or Dotnet Core 3.1+
 
-Input Data: CSV, Binaram, C# DataTable 
+Input Data: CSV, Binaram, DataTable 
 
-Output Data: CSV, Binaram, C# DataTable, JSON, HTML, JSON
+Output Data: CSV, Binaram, DataTable, JSON, HTML, JSON
+
+where DataTable is a standard dotnet in-memory data set
+      Binaram is a customised dotnet in-memory data set
 
 Below is a simplex example how to retrieve value of the in-memory binaram (see Example1.zip):-
 
