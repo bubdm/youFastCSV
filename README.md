@@ -24,6 +24,7 @@ for (int _row = 1; _row < 10; _row++) // when row = 0, the value represents colu
     Console.WriteLine(readBinaram(_column, _row));
 
 string readBinaram(int column, int row)
+
 {
     string cell;
     if (csv2Binaram.dataType[column] == "Number")
