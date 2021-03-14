@@ -2,6 +2,8 @@
 
 See demo video: https://youtu.be/i6PqhXLv4is
 
+See sample log: https://github.com/YuWaiPang/youFastCSV/blob/main/samplelog.txt
+
 Below is a simplex example how to retrieve value of the in-memory binaram (see Example1.zip):-
 
 binaram currentProcess = new binaram(); // new one instance of the in-memory "Binaram" processing
