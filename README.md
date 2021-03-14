@@ -3,6 +3,13 @@
 See demo video: https://youtu.be/i6PqhXLv4is
 
 See sample log: https://github.com/YuWaiPang/youFastCSV/blob/main/samplelog.txt
+(it is tested on a desktop windows PC having 8 cores and 32GB memory).
+
+Dependency: Dotnet 4.72+ or Dotnet Core 3.1+
+
+Input Data: CSV, Binaram, C# DataTable 
+
+Output Data: CSV, Binaram, C# DataTable, JSON, HTML, JSON
 
 Below is a simplex example how to retrieve value of the in-memory binaram (see Example1.zip):-
 
