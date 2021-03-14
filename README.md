@@ -1,4 +1,4 @@
-# youFastCSV
+# youFastCSV @ Company: YOUFAST.NET email: max@youfast.net
 
 See demo video: https://youtu.be/i6PqhXLv4is
 
