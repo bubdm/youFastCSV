@@ -14,7 +14,8 @@ Output Data: CSV, Binaram, DataTable, JSON, HTML, JSON
 where DataTable is a standard dotnet in-memory data set
       Binaram is a customised dotnet in-memory data set
 
-Below is a simplex example how to retrieve value of the in-memory binaram (see Example1.zip):-
+Example 1: How to retrieve value of the in-memory binaram (see Example1.zip and CashFlow.csv)
+=============================================================================================
 
 binaram currentProcess = new binaram(); // new one instance of the in-memory "Binaram" processing
 
@@ -50,5 +51,27 @@ string readBinaram(int column, int row)
     return cell;
     
 }
+
+
+Example 2: How to convert csv file to binaram and then convert to json file (see Example2.zip and CashFlow.csv)
+===============================================================================================================
+
+binaram currentProcess = new binaram(); // new one instance of the in-memory "Binaram" processing
+csv2BinaramInput currentInput = new csv2BinaramInput();  // new one instance of csv2Binaram properties
+currentInput.filePath = "Cashflow.csv"; // configure to process one data file "Cashflow.csv"
+binaram csv2Binaram = currentProcess.csv2Binaram(currentInput); // use current csv2Binaram properties to run csv2Binaram method           
+
+binaram2JSONsetting setBinaram2JSON = new binaram2JSONsetting();
+setBinaram2JSON.tableName = "Cashflow";
+StringBuilder binaram2JSON = currentProcess.binaram2JSONMultithread(csv2Binaram, setBinaram2JSON);
+using (StreamWriter toDisk = new StreamWriter(setBinaram2JSON.tableName + ".json"))
+{
+    toDisk.Write(binaram2JSON);
+    toDisk.Close();
+}
+var Filelength = new FileInfo("Cashflow.csv").Length;
+Console.WriteLine("Cashflow.json has filelength of " + Filelength + " was generated.");
+Console.ReadLine();
+
 
 
