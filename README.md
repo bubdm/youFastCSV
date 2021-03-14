@@ -72,12 +72,16 @@ setBinaram2JSON.tableName = "Cashflow";
 StringBuilder binaram2JSON = currentProcess.binaram2JSONMultithread(csv2Binaram, setBinaram2JSON);
 
 using (StreamWriter toDisk = new StreamWriter(setBinaram2JSON.tableName + ".json"))
+
 {
     toDisk.Write(binaram2JSON);
     toDisk.Close();
 }
+
 var Filelength = new FileInfo("Cashflow.csv").Length;
+
 Console.WriteLine("Cashflow.json has filelength of " + Filelength + " was generated.");
+
 Console.ReadLine();
 
 
