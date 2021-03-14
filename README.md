@@ -5,6 +5,7 @@ using System;
 using youFastConversion;
 
 namespace Example1 //how to retrieve cell value of Binaram
+
 {
     class Program
     {
