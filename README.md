@@ -20,9 +20,6 @@ Console.WriteLine("----------------");
 for (int _row = 1; _row < 5; _row++) // when row = 0, the value represents column ID 
     Console.WriteLine(readBinaram(_column, _row));
 
-for (int _row = 1; _row < 10; _row++) // when row = 0, the value represents column ID 
-    Console.WriteLine(readBinaram(_column, _row));
-
 string readBinaram(int column, int row)
 
 {
