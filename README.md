@@ -55,15 +55,22 @@ string readBinaram(int column, int row)
 
 Example 2: How to convert csv file to binaram and then convert to json file (see Example2.zip and CashFlow.csv)
 ===============================================================================================================
-
+// CSV to Binaram
 binaram currentProcess = new binaram(); // new one instance of the in-memory "Binaram" processing
+
 csv2BinaramInput currentInput = new csv2BinaramInput();  // new one instance of csv2Binaram properties
+
 currentInput.filePath = "Cashflow.csv"; // configure to process one data file "Cashflow.csv"
+
 binaram csv2Binaram = currentProcess.csv2Binaram(currentInput); // use current csv2Binaram properties to run csv2Binaram method           
 
+// Binaram to JSON
 binaram2JSONsetting setBinaram2JSON = new binaram2JSONsetting();
+
 setBinaram2JSON.tableName = "Cashflow";
+
 StringBuilder binaram2JSON = currentProcess.binaram2JSONMultithread(csv2Binaram, setBinaram2JSON);
+
 using (StreamWriter toDisk = new StreamWriter(setBinaram2JSON.tableName + ".json"))
 {
     toDisk.Write(binaram2JSON);
