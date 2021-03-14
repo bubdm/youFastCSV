@@ -30,7 +30,7 @@ string readBinaram(int column, int row)
         cell = csv2Binaram.factTable[column][row].ToString();
     else
         cell = csv2Binaram.key2Value[column][csv2Binaram.factTable[column][row]].ToString(); // csv2Binaram.key2Value is used to convert key to value for non number type column
-
+        
     return cell;
 }
 
