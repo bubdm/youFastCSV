@@ -1,6 +1,8 @@
 # youFastCSV
 
-Below is a simplex example how to retrieve value of the in-memory binaram:-
+See demo video: https://youtu.be/i6PqhXLv4is
+
+Below is a simplex example how to retrieve value of the in-memory binaram (see Example1.zip):-
 
 binaram currentProcess = new binaram(); // new one instance of the in-memory "Binaram" processing
 
