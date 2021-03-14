@@ -5,7 +5,8 @@ See demo video: https://youtu.be/i6PqhXLv4is
 See sample log: https://github.com/YuWaiPang/youFastCSV/blob/main/samplelog.txt
 (it is tested on a desktop windows PC having 8 cores and 32GB memory).
 
-Dependency: Dotnet 4.72+ or Dotnet Core 3.1+
+Dependency: Dotnet 4.72+ or Dotnet Core 3.1+. This solution and project folder is create using Visual Studo 2019 Community Edition.
+If you run it on Linux, please use Visual Studio Code build the runtime.
 
 Input Data: CSV, Binaram, DataTable 
 
