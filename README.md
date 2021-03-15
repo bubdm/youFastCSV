@@ -27,6 +27,7 @@ currentInput.filePath = "Cashflow.csv"; // configure to process one data file "C
 binaram csv2Binaram = currentProcess.csv2Binaram(currentInput); // use current csv2Binaram properties to run csv2Binaram method
 
 for (int i = 0; i < csv2Binaram.dataType.Count; i++) // display the data schema of the convered binaram "csv2Binaram"
+
     Console.WriteLine("Column:" + i + " " + csv2Binaram.columnName[i] + ":" + csv2Binaram.dataType[i] + " " + csv2Binaram.factTable[i].Count);
 
 int _column = 2;             
